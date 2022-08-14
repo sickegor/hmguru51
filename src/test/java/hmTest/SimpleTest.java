@@ -23,7 +23,7 @@ public class SimpleTest {
         open("https://github.com/");
         $(byText("Pricing")).hover();
         $(byText("Compare plans")).click();
-        $$(byClassName("h2-mktg")).shouldHave(new ItemWithText("Choose the plan that’s right for you."));
+        $("h1.h2-mktg").shouldHave(text("Choose the plan that’s right for you."));
 
     }
 
